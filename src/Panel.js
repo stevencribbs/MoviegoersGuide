@@ -216,19 +216,19 @@ class Panel extends Component {
                                 </div>
                             </div>
                             <div className="filterToolsB mt-2 mb-2">
-                                <form className="form-inline">
+                                <div className="form-inline">
                                     <button type="button" id="filterShowBtn" className="btn btn-primary btn-block px-4 btn-sm" style={{ width: '180px', 'fontSize': '.90rem' }} aria-haspopup="true" aria-expanded="false" onClick={this.showMovies}>
                                         Show Movies
                                     </button>
-                                </form>
+                                </div>
                             </div>
                             <div className="filterToolsC mt-2 mb-2">
-                                <form className="form-inline">
+                                <div className="form-inline">
                                     <input id="searchInput" className="form-control form-control-sm ml-3 w-60 mr-3" type="text" placeholder="Search" aria-label="Search" />
                                     <button type="button" id="searchShowBtn" className="btn btn-primary btn-block px-4 btn-sm" style={{ width: '180px', 'fontSize': '.90rem' }} aria-haspopup="true" aria-expanded="false" onClick={this.searchMovies}>
                                         Search Movies
                                     </button>
-                                </form>
+                                </div>
                             </div>
                             </div>
                         </div>
