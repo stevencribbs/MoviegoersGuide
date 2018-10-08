@@ -12,13 +12,6 @@ class App extends Component {
         this.togglePanel = this.togglePanel.bind(this);
     }
 
-
-    //shouldComponentUpdate(nextProps, nextState) {
-    //    if (nextState.form == this.state.form) {
-    //        return false;
-    //    }
-    //    return true;
-    //}
     togglePanel() {
         if (this.state.panelMode == "explore") {
             this.setState({ panelMode: "search" });

@@ -23,9 +23,9 @@ class Panel extends Component {
         switch (this.props.panelType) {
             case "explore":
                 display = <div>
-                        <MovieList listType='horizontal' listTitle='Now Playing' dataType='discover' query='/discover/movie?primary_release_date.gte=2018-09-01' />
+                        <MovieList listType='horizontal' listTitle='Now Playing' dataType='discover' query='/movie/now_playing?language=en-US&page=1' />
                         <MovieList listType='horizontal' listTitle='Most Popular Movies' dataType='discover' query='/discover/movie?sort_by=popularity.desc' />
-                        <MovieList listType='horizontal' listTitle='Top Rated Movies' dataType='discover' query='/discover/movie?sort_by=vote_average.desc' />
+                        <MovieList listType='horizontal' listTitle='Top Rated Movies' dataType='discover' query='/movie/top_rated?language=en-US&page=1' />
                         </div>;
                 break;
             default:
@@ -49,8 +49,7 @@ class Panel extends Component {
         let qGenre = $("#filterGenreBtn").html();
         let qYear = $("#filterYearInput").val();
         let qSortby = $("#filterSortBtn").html();
-        //alert(`${year} :: ${rating} :: ${genre}`);
-
+        
         let genreId = 0;
         switch (qGenre) {
             case "Action":

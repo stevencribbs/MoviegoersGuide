@@ -18,7 +18,6 @@ class MovieList extends Component {
 
     getMovieListContent() {
         $("body").css("cursor", "wait");
-        //let fullQuery = this.props.query + "&api_key=" + this.state.apiKey + "&append_to_response=";
         API.get(this.props.query + "&api_key=" + this.state.apiKey).then((response) => {
             this.setState({
                 movieQuery: this.props.query,
